@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import SoundFile from '../components/SoundFile.js'
-import photo from '/Users/Admin/Desktop/CodePlatoon/practicereactforproject/practice-audio/src/components/assets/hamiltonphoto.jpg'
+import photo from '../components/assets/hamiltonphoto.jpg'
 
 
 class SoundBoardPage extends Component{
