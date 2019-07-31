@@ -22,7 +22,7 @@ class CommentPage extends Component {
     return (
       
       <div>
-        <h1> All Comments </h1>
+        <h1> Please leave a comment on the Guestbook!</h1>
         <AddCommentForm />
         <CommentList comments={this.state.comments} />
       </div>

@@ -28,7 +28,7 @@ class AddCommentForm extends Component {
     return (
       <div>
         <Form onSubmit={this.handleSubmit.bind(this)}>
-          <Form.Group controlId="commenter_name">
+          <Form.Group dcontrolId="commenter_name">
             <Form.Label>Name</Form.Label>
             <Form.Control/>
           </Form.Group>
