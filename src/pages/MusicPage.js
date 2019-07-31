@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import SoundFile from '../components/SoundFile.js'
 import CommentPage from './CommentPage'
+
 // import photo from './components/assets/hamiltonphoto.jpg'
 
 

@@ -11,15 +11,16 @@ class AddCommentForm extends Component {
   handleSubmit(event){
     event.preventDefault()
     const commentObject = {
-      name: event.target.elements[0].value,
-      comment: event.target.elements[1].value,
+      commenter_name: event.target.elements[0].value,
+      comment_text: event.target.elements[1].value,
     }
+    console.log(commentObject)
     HamiltonAPI.addComment(commentObject)
       .then((response) => { this.setState({ redirect: true }) })
   }
 
   render() {
-    const { redirect } = this.state
+    const { redirect } = this.state.redirect
     if (redirect) {
       return <Redirect to = "/" />
     }
@@ -27,12 +28,12 @@ class AddCommentForm extends Component {
     return (
       <div>
         <Form onSubmit={this.handleSubmit.bind(this)}>
-          <Form.Group controlId="name">
+          <Form.Group controlId="commenter_name">
             <Form.Label>Name</Form.Label>
             <Form.Control/>
           </Form.Group>
 
-          <Form.Group controlId="comment">
+          <Form.Group controlId="comment_text">
             <Form.Label>Comment</Form.Label>
             <Form.Control/>
           </Form.Group>
