@@ -1,22 +1,27 @@
 import React, { Component } from 'react'
 import SoundFile from '../components/SoundFile.js'
 import CommentPage from './CommentPage'
+import image from '../components/assets/hamiltonphoto.jpg'
 
-// import photo from './components/assets/hamiltonphoto.jpg'
-
+const divStyle = {
+  width: '88%',
+  height: '800px',
+  backgroundImage: `url(${image})`,
+  backgroundSize: 'cover'
+};
 
 class SoundBoardPage extends Component{
   render() {
     return (
       <>
-      <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-      {/* <img src={photo}/> */}
-      <h1 class="display-4">Hamilton Musical Soundboard</h1>
-      <p class="lead">Some fun Hamilton Musical Clips to enjoy with your friends!</p>
+      <div >
+        <div style={divStyle} class="container">
+          {/* <img src={image} size='sm' alt='' fluid /> */}
+          <h1 class="display-4">Hamilton Soundboard</h1>
+          <p class="lead">Some fun Hamilton Musical Clips to enjoy with your friends!</p>
+          <SoundFile/>
+        </div>
       </div>
-      </div>
-      <SoundFile />
       <footer>
         <CommentPage />
       </footer>
