@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import './App.css'
-// import SoundButton from './pages/MusicPage.js'
-// import logo from './components/assets/hamiltonphoto.jpg'
 import SoundBoardPage from './pages/MusicPage.js'
-// import HamiltonAPI from './api/HamiltonAPI.js'
 
 
 class App extends Component {
