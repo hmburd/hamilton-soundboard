@@ -1,5 +1,10 @@
 const fetchComments = () => {
-  return fetch(`https://cors-anywhere.herokuapp.com/https://hamilton-backend.herokuapp.com/comments/`)
+  return fetch(`https://cors-anywhere.herokuapp.com/https://hamilton-backend.herokuapp.com/comments/`,{
+    headers: {
+      'Content-Type': 'application/json',
+      'X-Request-With': 'XMLHttpRequest'
+    }
+  })
     .then((response) => response.json())
 }
 
