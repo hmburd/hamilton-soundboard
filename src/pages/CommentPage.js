@@ -18,6 +18,18 @@ class CommentPage extends Component {
     )
   }
 
+  componentDidUpdate(prevProps, prevState){
+    if (this.state.comments !== prevState.comments){
+    HamiltonAPI.fetchComments()
+      .then((apiResponseJSON) => {
+        this.setState({
+          comments: apiResponseJSON
+        })
+      }
+    )
+    }
+  }
+
   render() {
     return (
       

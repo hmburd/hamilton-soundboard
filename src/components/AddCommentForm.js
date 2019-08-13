@@ -22,22 +22,21 @@ class AddCommentForm extends Component {
   }
 
   handleChangeName(event){
-    console.log(event.target.value)
     event.preventDefault()
     let commenter_name = event.target.value
     this.setState({ name: commenter_name })
   }
 
   handleChangeComment(event){
-    console.log(event.target.value)
     event.preventDefault()
     let comment_text = event.target.value
     this.setState({ comment: comment_text })
   }
 
   render() {
-    const { redirect } = this.state.redirect
+    const redirect = this.state.redirect
     if (redirect) {
+      this.setState({redirect: false})
       return <Redirect to = "/" />
     }
     
