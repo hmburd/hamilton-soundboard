@@ -1,8 +1,3 @@
-// const fetchCommentByID = (wineID) => {
-//   return fetch(`https://cors-anywhere.herokuapp.com/https://wineapi-cp.herokuapp.com/wines/${wineID}`)
-//     .then((response) => response.json())
-// }
-
 const fetchComments = () => {
   return fetch(`https://cors-anywhere.herokuapp.com/https://hamilton-backend.herokuapp.com/comments/`)
     .then((response) => response.json())
