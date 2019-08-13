@@ -16,7 +16,6 @@ class SoundBoardPage extends Component{
       <>
       <div >
         <div style={divStyle} class="container">
-          {/* <img src={image} size='sm' alt='' fluid /> */}
           <h1 class="display-4">Hamilton Soundboard</h1>
           <p class="lead">Some fun Hamilton Musical Clips to enjoy with your friends!</p>
           <SoundFile/>
